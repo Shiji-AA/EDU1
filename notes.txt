@@ -22,10 +22,10 @@ vs code extension
 spell check
 eslint
 gitlens
-githistory
+git history
 vscode-icons
 live server - must
-Tabnine
+Tab nine
 
 
 skills
@@ -48,7 +48,7 @@ Backend
 Node js
 mongodb
 
-MERN - mongodb express react nodejs
+ME RN - mongodb express react nodejs
 MEAN - mongodb express angular nodejs
 
 framework & library
@@ -65,7 +65,7 @@ heading tags
 
 h1 --- h6
 opening -----closing
-<tagname>content</tagname>
+<tag name>content</tag name>
 element
 
 
