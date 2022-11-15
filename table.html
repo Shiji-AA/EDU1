@@ -7,7 +7,8 @@
     <title>Document</title>
 <style>
     table {
-     width: 100%;   
+     width: 100%;
+     border-spacing: 20px;   
     }
     table,th, td {
         border: 1px solid black;
@@ -18,17 +19,24 @@
     }
         th,td {background-color: palegreen
         }
+        th,td { text-align:center;
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+        }
 </style>
 </head>
 <body>
+    <!--TABLE1-->
     <table>
         <tr>
-            <th style="width:50% ;" >Name</th>
+            <th style="width:80% ;" >Name</th>
             <th>Email address</th>
-            <th>Phone no</th>
+            <th rowspan="3">Phone no</th>
         </tr>
         <tr>
-            <td>Gaurav</td>
+            <td style="height:100px ;">Gaurav</td>
             <td>abc@gmail.com</td>
             <td>14552</td>
         </tr>
@@ -42,14 +50,34 @@
             <td>hgf@gmail.com</td>
             <td>8785545</td>
             </tr>
+    </table>
+    <br/>
 
-
-
-            </td>
+    <!--TABLE2-->
+    <table>
+        <tr>
+            <th colspan="3">Name</th>
+            <td>Gaurav</td>
+            <td>Gopii</td>
+            <td>hena</td>
         </tr>
-
+        <tr></tr>
+        <th>Email id</th>
+        <td>gaurav@gmail.com</td>
+        <td>gopii@gmail.com</td>
+        <td>hena@gmail.com</td>
+    </tr>
+    <tr>
+        <th>phone no</th>
+        <td>1452</td>
+        <td>4562</td>
+        <td>7852</td>
+    </tr>
 
     </table>
     
+
+
+
 </body>
 </html>
