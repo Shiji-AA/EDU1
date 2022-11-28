@@ -1,0 +1,30 @@
+body{
+    background-color: paleturquoise;
+}
+h1{
+    text-align: center;
+}
+
+#tilecontainer {
+    width:100%;
+    height: 400px;
+    background-color:rgb(27, 119, 39);
+    margin: 2%;
+}
+.card {
+    height: 400px;
+    background-color: blueviolet;
+    width:20%;
+    float:left;
+    margin:2%;
+    overflow: scroll;
+}
+.brown {
+    background-color: chocolate;
+}
+.yellow {
+    background-color: aqua;
+}
+.green {
+    background-color: rgb(0, 255, 42);
+}
