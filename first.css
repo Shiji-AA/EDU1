@@ -28,3 +28,12 @@ h1{
 .green {
     background-color: rgb(0, 255, 42);
 }
+#head1 {
+    color: blue;
+}
+#head2 {
+    color: brown;
+}
+#head3 {
+    color: darkgoldenrod;
+}
