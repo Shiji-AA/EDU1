@@ -1,0 +1,15 @@
+.main-block {
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+} 
+.inline-block {
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 100x;
+    background-color: blueviolet;
+    margin:20px;
+    text-align:center;
+}
