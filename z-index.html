@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+    .container {
+        position: relative;
+            }
+            .red-box {
+                position: relative;
+                border: 1px solid red;
+                background-color: deeppink;
+                height :200px;
+                margin :40px;
+                z-index: 1;
+            }
+            .green-box {
+                position:absolute;
+                background-color: green;
+                width: 70%;
+                height: 40%;
+                top: 50px;
+                left:100px;
+                z-index: 1;
+            }
+            .black-box {
+                position:absolute;
+
+                background-color: gray;
+                width: 35%;
+                height: 100px;
+                top:70px;
+                left:200px;
+                z-index: 3;
+            }
+    </style>
+</head>
+<body>
+    <div class=""container">
+        <div class="red-box">RED BOX</div>
+        <div class="green-box">GREEN BOX</div>
+        <div class="black-box">BLACK BOX</div>
+    </div>
+</body>
+</html>
