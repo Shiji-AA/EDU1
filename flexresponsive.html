@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexresponsive</title>
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 35px;
+    }
+    .flex-left {
+        flex: 50%;
+        background-color: blueviolet;
+        padding: 10 px;
+    }
+    .flex-right {
+        flex: 50%;
+        background-color: tomato;
+        padding: 10 px;
+    }
+    @media (max-width : 800px) {
+        .flex-container    {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+  <h1>Flex Responsive</h1>  
+  <div class="flex-container">
+    <div class="flex-left">1</div> 
+    <div class="flex-right">2</div>
+  </div>
+</body>
+</html>
