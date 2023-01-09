@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style type="text/css">
+      .block {
+         display: block;
+      }
+      .btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+   </style>
+   
+</head>
+<body>
+<h1>helo world</h1>
+  <div class="btn-group">
+    <button>Apple</button>
+    <button>Samsung</button>
+    <button>Sony</button>
+  </div>
+
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+        <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+      </div>
+
+     
+...
+
+<form>
+<label class="block"><input type="radio" name="radgroup" value="A">Option A</label>
+<label class="block"><input type="radio" name="radgroup" value="B">Option B</label>
+<label class="block"><input type="radio" name="radgroup" value="C">Option C</label>
+<label class="block"><input type="radio" name="radgroup" value="D">Option D</label>
+</form>
+</body>
+</html>
