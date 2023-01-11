@@ -23,3 +23,25 @@ a:link {
 a:hover {
     color:white;
 }
+div {
+    width: 33%;
+    float:left
+}
+.vegetable {
+    background-color: darkgreen;
+}
+.fruit {
+    background-color: blue;
+    text-align: center;
+    color: blanchedalmond;
+}
+.organic {
+    color: aliceblue;
+    text-align:center
+}
+#veg1 {
+    color: blue;
+}
+#fru1 {
+    color: blueviolet;
+}
