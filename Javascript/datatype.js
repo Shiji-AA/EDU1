@@ -3,8 +3,11 @@ document.write("Learn JS");
 
 // this is my first javasript programe..//
 
-var a = "123Delhi";
-var b = "Delhi123";
-var c = "123Delhi563"
+var mname = "Avengers";
+var type = "action";
+var category = "Hollywood";
+var rating="4.5";
 
-document.write parseInt(a)
+var output ="An "+mname+" is an "+type+" of "+category+" movie with rating of "+rating+" and from the category "+category+". "
+
+console.log(output)
