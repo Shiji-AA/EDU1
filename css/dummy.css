@@ -1,26 +1,10 @@
-h6 {
-  display: inline;
-  padding: 50px 50px;
-  margin-right: 20px;
-  text-align: left;
-}
 
-#email {
-  width: 26%;
-}
 table {
   width: 50%;
-  border: 1px;
   border-collapse: collapse;
   text-align: left;
-  padding: 5px ;
-  
+
 }
 .checked {
   color: orange;
-}
-
-.td1 {
-  border:;
-  width:10px;
 }
