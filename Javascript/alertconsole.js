@@ -9,5 +9,10 @@ alert("No slots available")*/
 
 /*console.log(confirm("Do you want to leave?"))*/
 
-prompt("what is your name?");
-console.log(prompt("what is your name?"))
+/*prompt("what is your name?");
+console.log(prompt("what is your name?"))*/
+var a = prompt("Enter first value");
+var b = prompt("Enter second value");
+/*alert(Number(a)+Number(b));*/
+/*console.log(Number(a)+Number(b));*/
+/*alert(a+b);  ==>will be a String*/
