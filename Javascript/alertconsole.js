@@ -7,4 +7,7 @@
 alert("No slots available")*/
 /*confirm("Do you want to leave?")*/
 
-console.log(confirm("Do you want to leave?"))
+/*console.log(confirm("Do you want to leave?"))*/
+
+prompt("what is your name?");
+console.log(prompt("what is your name?"))
