@@ -60,3 +60,5 @@ let sum = (a, b) => {
 }
 let output =sum (52, 7)
 console.log (output);
+
+

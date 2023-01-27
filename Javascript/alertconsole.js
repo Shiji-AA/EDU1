@@ -3,8 +3,8 @@
 /*confirm() =>to check whether yes or no*/
 /*prompt() => to take user input*/
 
-/*alert("Form submitted" )
-alert("No slots available")*/
+alert("Form submitted" )
+alert("No slots available")
 /*confirm("Do you want to leave?")*/
 
 /*console.log(confirm("Do you want to leave?"))*/
