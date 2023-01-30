@@ -66,6 +66,60 @@ var n = 20;
 console.log(h != n);
 
 
+var a = 43;
+if (a % 2 == 0) {
+    console.log(`number ${a} is even`)
+}else {
+    console.log(`number ${a} is odd`)
+}
+
+var uname = "anam";
+if(uname == "John") {
+    console.log(`Hi ${uname}you are a admin`);
+} else if (uname == "Jack")  {
+    console.log(`Hi ${uname} you are a super admin`) ;
+} else {
+    console.log(`Hi ${uname} you are unknown`);
+}
+
+var name = "Jack";
+var role = "admin" ;
+if (role == "admin") {
+    if (name == "Jereez") {
+        console.log(`Hi ${name} you are a admin`);
+} else {
+        console.log(`Hi ${name} you are unknown`);
+    } 
+}else {
+        if (name == "Jack" ) {
+            console.log (`Hi ${name} you are a super admin`);                      
+        } 
+       else  {
+        console.log (`Hi ${name} you are unknown`);
+    }
+}
+
+var a = 10
+a > 10 ? "hi" : "bi";
+
+
+//Function
+
+function isEven (input) {
+let out ;
+if (input % 2 == 0) {
+    out = `Number ${input}  is even`;
+}else {
+    out = `Number ${input}  is odd`;
+}
+return out ;
+}
+console.log (isEven (50));
+
+    
+
+
+
 
 
 

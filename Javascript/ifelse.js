@@ -6,7 +6,7 @@ if (a%2 ==0) {
 }
 
 
-let uname = "Jasmin";
+let uname = "Jack";
 if (uname == "John") {
     console.log (`Hi ${uname} you are admin`);
 }else if (uname == "Jack") {
@@ -30,3 +30,7 @@ if (role == "Admin") {
         console.log (`Hi ${name} you are unknown`);
     }
 }
+
+
+
+
