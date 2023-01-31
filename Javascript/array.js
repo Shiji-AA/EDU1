@@ -29,4 +29,63 @@ city[1];
 // unshift -> add as first value in Array
 // shift -> remove first value in Array
 
+var a = [
+    "Delhi",
+    "Mumbai",
+    "Helsinki",
+    "London",
+    "Amsterdam",
+    "Boston",
+    "Venice",
+  ];
+
 // city.push("Boston");
+
+//["Delhi", "Mumbai", "Helsinki", "London", "Amsterdam", "Boston"]
+console.log(city.push("Boston")); //6
+console.log(city);
+//(6)[("Delhi", "Mumbai", "Helsinki", "London", "Amsterdam", "Boston")];
+
+city.push("Venice")[ //7
+  ("Delhi", "Mumbai", "Helsinki", "London", "Amsterdam", "Boston", "Venice")
+];
+console.log(city);
+
+// pop -> remove last value in an array
+
+console.log(a.pop()); //venice
+
+
+//How to remove First Option in an ARRAY
+
+// unshift -> add as first value in Array
+var a = [
+    "Delhi",
+    "Mumbai",
+    "Helsinki",
+    "London",
+    "Amsterdam",
+    "Boston",
+    "Venice",
+  ];
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
