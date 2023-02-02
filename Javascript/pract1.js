@@ -116,7 +116,65 @@ return out ;
 }
 console.log (isEven (50));
 
-    
+// function for printing Hello world
+
+
+//method 1
+ function addition1 (a ,b) {
+    let sum1 = a+ b;
+    return sum1;
+}console.log(addition1(20, 10));
+
+
+//method 2
+function addition2 (a ,b) {
+     return  a+ b;
+}console.log(addition2(20, 10));
+
+
+//method 3
+addition3 = function( x ,y) {
+    return x+y ;
+}
+console.log(addition3(20, 10));
+
+
+//method 4
+addition4 = (x,y) => {
+    return x+y;}
+console.log(addition4(25, 10));
+
+//method 5
+
+addition5 = (x,y) => x+y ;
+console.log(addition5(27, 10));
+
+//----------------------------------------
+
+var uname= "SHIJI JEREEZ"
+console.log(uname.toLowerCase());
+
+var place = "paRis";
+console.log(place.charAt(0).toUpperCase() + place.slice(1).toLowerCase );
+
+//dom
+//-------------------------------------------------
+
+var a = document.getElementsByName("text");
+console.log(a);
+
+var b = document.getElementById("head");
+function message () {
+    b.innerHtml = "hello" + a.value ;
+}
+
+var a = document.querySelectorAll("h1");
+console.log(a);
+a[0].innerHtml = "Learn HTML"
+
+
+
+
 
 
 
