@@ -160,17 +160,19 @@ console.log(place.charAt(0).toUpperCase() + place.slice(1).toLowerCase );
 //dom
 //-------------------------------------------------
 
-var a = document.getElementsByName("text");
+//var a = document.getElementsByName("text");
 console.log(a);
 
-var b = document.getElementById("head");
+//var b = document.getElementById("head");
 function message () {
     b.innerHtml = "hello" + a.value ;
 }
 
-var a = document.querySelectorAll("h1");
+//var a = document.querySelectorAll(".hclass");
+//console.log(a);
+//a[0].innerHtml = "Learn HTML"
+var a = document.querySelectorAll("#head1");
 console.log(a);
-a[0].innerHtml = "Learn HTML"
 
 
 
