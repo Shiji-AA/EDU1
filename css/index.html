@@ -6,10 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel =" stylesheet" href ="practice1.css"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="practice1.js"></script>
 </head>
 
 <body>
     <h1>calculator</h1>
+    <div class = "container">
+        <div class="panel panel-primary">
+            <div class = "panel-heading">calc</div>
+            <div class=" panel-body">
+
+<div class="form-group">
+    <label>First</label>
+    <input class="form-control" id="first"/>
+</div>
+<div class="form-group">
+    <label>Second</label>
+    <input class="form-control" id="second"/>
+</div>
+            <p class="out"></p>
+            
+
+            <button class="btn btn-success" onClick="add()">
+                <span class="glyphicon glyphicon-plus"></span> </button>
+                <button class="btn btn-danger" onClick="sub()">
+                    <span class="glyphicon glyphicon-minus"></span>
+                 </button>
+
+            
+        </div>
+         </div>
+        </div>
     
 </body>
 </html>

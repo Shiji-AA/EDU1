@@ -1,4 +1,4 @@
-/*function calc(option){
+function calc(option){
     let a = document.getElementById("first").value;
     let b = document.getElementById("second").value;
     let output;
@@ -10,10 +10,10 @@
 
     document.getElementsByClassName("out")[0].innerText = output
 }
-*/
 
 
 
+/*
 function add() {
    let a = document.getElementById("first").value;
    let b = document.getElementById("second").value;
@@ -21,4 +21,4 @@ function add() {
    document.getElementsByClassName("out")[0].innerText = `Sum of number is ${output}`;
  }
 
-
+*/
