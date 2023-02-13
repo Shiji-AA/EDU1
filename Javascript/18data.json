@@ -1,5 +1,6 @@
-{
-    "name": "Harry Potter"
+[
+  {
+    name: "Harry Potter"
     "rating": 4.5
     type: "Action"
   }
@@ -8,3 +9,4 @@
     rating: 5
     type: "Action"
   }
+]
