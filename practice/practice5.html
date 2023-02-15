@@ -5,92 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="dummy.css">
 </head>
 <body>
-    <div style="background-color: gray;">
-        <form>
-            <h1>Registation Form</h1>
-            <label>First name</label>
-            <input type="text" name="fname" id="fname">
-            <label>Second name</label>
-            <input type="text" name="sname" id="sname">
-            <br>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
-            <label>Password</label>
-            <input type="password" name="password" id="password">
+    <h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
 
-            <div style="background-color: blue;">
-                <h2>Gender</h2>
-                <input type="radio" name="gender" id="male">
-                <label>Male</label>
-                <input type="radio" name="gender" id="Female">
-                <label>FeMale</label>
-                <input type="radio" name="gender" id="Others">
-                <label>Others</label>
-            </div>
+<p id="demo"></p>
 
-            <div>
-                <h2>Hobbies</h2>
-                <label> cricket</label>
-                <input type="checkbox" name="game" id="Cricket">
-                <label> tennis</label>
-                <input type="checkbox" name="game" id="Tennis">
-                <label> chess</label>
-                <input type="checkbox" name="game" id="Chess">
-            </div>
-            <div style="background-color: blueviolet;">
-                <h2>states</h2>
-<label>states</label>
-<select name="states" id="states">
-<option value="Kerala">Kerala</option>
-<option value="Karnataka">KARNATAKA</option>
-<option value="gOA">gOA</option>
-</select>
-</div>
-<div>
-    <label>Address</label><br>
-    <textarea name="address" rows="10" clos="50"></textarea>
-</div>
-<div style="background-color: aquamarine;">
-    <label>Uploadphoto</label>
-    <input type="file" name="Uploadphoto" id="Uploadphoto"></div>
-<input type="button" name="register" value="register">
-        </form>
-    </div>
-    <br/>
-    <br/>
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() {
+    return person.firstName + " " + person.lastName;
+  }
+};
 
-
-    <caption>my table</caption>
-    <table style="width:100%" border="1px">
-        
-        <tr>
-            <th>sl no</th>
-            <th>item</th>
-            <th>qty</th>
-            <th>price</th>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><orange/td>
-            <td>100</td>
-            <td>11200</td>
-</tr>
-<tr>
-    <td>3</td>
-            <td><GUA/td>
-            <td>100</td>
-            <td>11000</td>
-</tr>
-<tr>
-    <td>4</td>
-            <td><mango/td>
-            <td>100</td>
-            <td>11000</td>
-</tr>
-
-    </table>
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
 </body>
 </html>
