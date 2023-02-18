@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+<p id =" demo"></p>
+<script>
+    class Student {
+          name;
+          YOB;
+          place;
+
+          constructor(name,YOB,place){
+           this.name= name,
+           this.YOB= YOB;
+            this.place=place;
+          }
+        
+          getAge() {
+                     return new Date().getFullYear() - this.YOB;
+                   }
+          getName(){
+                     return this.name;
+                    }
+        getPlace(){
+                     return this.place;
+                    }
+
+    }
     
-</body>
-</html>
+    var student1 = new Student('shiji' ,1980,"kaloor");
+    var student2 = new Student('rashmi',1964,"kochi");
+    var student3 = new Student('nisha', 1986,"aluva");
+
+    console.log(student1.getName(),student1.getAge(),student1.getPlace());
+
+    console.log(student2.getName(),student2.getAge(),student2.getPlace());
+
+    console.log(student3.getName(),student3.getAge(),student3.getPlace());
+
+</script>
