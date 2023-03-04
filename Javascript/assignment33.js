@@ -43,15 +43,16 @@ class restaurantManager {
     
     //part1-third
 
-         filterRestaurantByCity = (cityname) => {
-            return this.restaurantList.filter(restaurant => restaurant.city == cityname)
-         }
+    filterRestaurantByCity=(cityName)=>{
+        return this.restaurantList.filter((data) => {
+            return data.city==cityName
+        });
+        }
+    };
 
-    }
-
-    const restaurantObject = new restaurantManager();
-    const output1 = restaurantObject.printAllRestaurantNames();
-    const output2 = restaurantObject.filterRestaurantByCity("Delhi");
+    const restObj = new restaurantManager();
+    const output1 = restObj.printAllRestaurantNames();
+    const output2 = restObj.filterRestaurantByCity("Delhi");
     console.log(output1);
     console.log(output2);
 
