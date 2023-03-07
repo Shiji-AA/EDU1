@@ -49,4 +49,4 @@ console.log(avgRating);
 const output2 = avgRating.filter(item => item.avgRating >= 4);
 console.log(output2);
 
-//end
+//end    
