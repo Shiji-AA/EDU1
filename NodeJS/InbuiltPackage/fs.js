@@ -36,9 +36,13 @@ const fs =require("fs");
           console.log("The content of the file is", data);
          });  */
         
-        const quote4 = "\nTake Care";
+        //const quote4 = "\nTake Care";
         
-        fs.appendFile("./nice.txt", quote4, () => {
-          console.log("Completed Writing");
-        });
+        //fs.appendFile("./nice.txt", quote4, () => {
+          //console.log("Completed Writing");
+       // });
         
+fs.unlink ("./nice.txt",(err) => {
+  if (err) throw err;
+  console.log("File deleted");
+});
