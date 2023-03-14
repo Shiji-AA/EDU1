@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const PORT = 5008;
 
 const locations = [
     {
@@ -101,7 +102,7 @@ const locations = [
       "country_name": "India"
     }
   ];
-   
+//const MONGO_URL = "mongodb://localhost:27017";
 //REST API Endpoints
 
 app.get('/', function (req, res) {
@@ -113,7 +114,11 @@ app.get('/', function (req, res) {
 app.get("/locations", function (req, res) {
     res.send(locations);
   });
+
+  app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`);
+  });
   
-  app.listen(5003);
+ // app.listen(5008);
 
   
