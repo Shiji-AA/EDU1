@@ -2,7 +2,7 @@ const express = require('express');
 const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
 const app = express();
-const PORT = 3001;
+const PORT = 5000;
 
 const MONGO_URL = "mongodb://localhost:27017";
 
