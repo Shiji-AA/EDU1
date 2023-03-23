@@ -161,6 +161,26 @@ app.get("/orders", function (req, res) {
     });
 });
 
+//update Order
+
+app.put("/updateOrder/:id", function (req, res) {
+  let oid = req.params.id;
+  db.collection("orders").updateOne(
+    { id: oid },
+    {
+      $set: {
+        status: req.body.status,
+        bank_name: req.body.bank_name,
+        date: req.body.date,
+      },
+    },
+    (err, result) => {
+      if (err) throw err;
+      res.send("Order updated");
+    }
+  );
+});
+
 //delete orders
 
 app.delete("/deleteOrder/:id", function (req, res) {
