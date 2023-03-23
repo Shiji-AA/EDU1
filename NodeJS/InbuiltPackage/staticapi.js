@@ -1,5 +1,5 @@
-let http = require("http");
-let fs = require("fs");
+let http = require("http"); //importing http server
+let fs = require("fs"); //importing file system
 
 let server = http.createServer((req, res) => {
   fs.readFile("data.json", "utf-8", (err, data) => {
@@ -9,4 +9,5 @@ let server = http.createServer((req, res) => {
   });
 });
 
-server.listen(4001);
+server.listen(4002);
+
