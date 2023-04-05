@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import { Component } from "react";
+import "./App.css";
+import {DisplayData} from "./DisplayData";
+import {User} from "./User";
+
+
+
 
 export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "Jack",
-    };
-  }
-  render() {
-    return<div>App</div>;
-  
-  }
+constructor (props){
+  super(props);
+  this.state = {}
 }
+render() {
+  return <div className="App">User</div> ;
+}
+}
+
+
+
