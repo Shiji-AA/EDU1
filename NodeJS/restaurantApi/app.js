@@ -1,15 +1,17 @@
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 5000;
 const mongo=require('mongodb');
 const MongoClient = mongo.MongoClient;
 const bodyParser = require('body-parser');
+const cors = require("cors");
 let db;
 
 //middleware
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 
 
 MongoClient.connect('mongodb://0.0.0.0:27017/edu1we', (err, client) => {
