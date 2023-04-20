@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 const ListingDisplay=(props)=>{
     const renderData = ({listData}) => {
@@ -11,7 +12,9 @@ return listData.map((item) => {
 <img className="Image" src={item.restaurant_thumb} alt={item.restaurant_name} />
     </div>
 <div className="col-md-5">
-    <div className="hotel-name-heading">{item.restaurant_name}</div>
+    <div className="hotel-name-heading">
+      
+     <Link to={`/details/restId=${item.restaurant_id}`}>{item.restaurant_name}</Link></div>
     <div className="city-name">{item.address}</div>
     <div className="hotel-name">{item.rating_text}</div>
     <div className="hotel-name">Rs. {item.cost}</div>
