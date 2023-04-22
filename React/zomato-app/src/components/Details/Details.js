@@ -1,8 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import {Link} from "react-router-dom";
-import "./details.css";
 import axios from "axios";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import {Link} from "react-router-dom";
+import MenuList from "./MenuList";
+import "./details.css";
+import Header from "../../Header";
+
+
 const url = "http://localhost:5000";
 
 export default class Details extends Component {
@@ -10,38 +16,106 @@ export default class Details extends Component {
         super();
         this.state = {
           details: "  ",
-          menuList: "  ",
+          menuList: [ ],    //if we give "",will get -type error  menu data is not a function
           mealId: sessionStorage.getItem("mealId"),
           userItem: "   ",
         };
       }
 
+      addToCart = (data) => {
+        this.setState({ userItem: data });
+      };
+    
+      proceed = () => {
+        sessionStorage.setItem("menu", this.state.userItem);
+        this.props.history.push(
+          `/placeOrder/${this.state.details.restaurant_name}`
+        );
+      };
+
+
+
     render() {
-        let { details } = this.state;
+        let {details} = this.state
         return (
             <div id ="mainContent">
-              <div class="myApp"></div>
-                <div className="ImgDiv">                    
-                {  /*<img src = {details.restaurant_thumb}
-                 alt="rest-pc" /> */} 
-                </div>                
-            </div>
+                <div className="ImgDiv"><img src = {details.restaurant_thumb}alt = "rest-pic" /></div>  
+                <div className="contentDiv"> <h2> {details.restaurant_name}</h2>
+                <span>250Customers Say {details.rating_text}</span>
+                <h3><del>Old price Rs: 1000</del></h3>
+                <h3>New price Rs : {details.cost} </h3>
+                <h4>Best Taste of Fresh and hot food at your Door Step and DineIn</h4>
+                <div className='feature-Container'>
+
+                <figure>
+                  <img className="featureIcon"
+                    src="https://i.ibb.co/wJvrhYg/veg.png" alt="pureVeg"/>
+                     <figcaption>Pure Veg</figcaption>
+                       </figure>
+                <figure>
+                  <img class="featureIcon"
+                    src="https://i.ibb.co/mD3jpgc/sentizied.png" alt="sanitized"/>
+                      <figcaption>Fully Sanitized</figcaption>
+                         </figure>
+                          </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+      <Tabs>
+        <TabList>
+          <Tab>About Us</Tab>
+            <Tab>Contact Us</Tab>
+              </TabList>
+                <TabPanel>
+                 <p>
+                  {details.restaurant_name} with rating as{" "}
+                  {details.average_rating}
+                 </p>
+              </TabPanel>
+            <TabPanel>
+          <h3>{details.address}</h3>
+        <p>Contact No. {details.contact_number}</p>
+      </TabPanel>
+    </Tabs>
+                <div>
+                 <Link to={`/listing/${this.state.mealId}`} className="btn btn-danger">
+                    BACK</Link>
+                    <button className="btn btn-success" onClick={this.proceed}>Proceed</button>
+                </div>
+                        
+      <div>
+
+        <MenuList menuData={this.state.menuList}
+        finalOrder={(data) => {
+          this.addToCart(data);
+        }}
+        />
+       
+        </div>  
+                    
+                </div>
+                </div>
         )}
     
 
+
+
+
         async componentDidMount () {
-          
+    
            //let restId = this.props.match.params.restaurant_id;
-            let restId = this.props.location.search.split ("=")[2];
+            let restId = this.props.location.search.split ("=")[1];
             //console.log(restId);
             let response = await axios
             .get(`${url}/details/${restId}`, {method: "GET"});
             let menuData = await axios.get(`${url}/menu/${restId}`, { method: "GET" });
-        console.log(response);
-        console.log(menuData);
-         this.setState ({ details :response.data[0] , menuList: response.data})}}   
+            console.log(response);
+            console.log(menuData);
+         this.setState ({ details :response.data[0] , menuList:menuData.data})
+        }}   
    
-
 
 
 

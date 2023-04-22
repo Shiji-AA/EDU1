@@ -14,7 +14,7 @@ return listData.map((item) => {
 <div className="col-md-5">
     <div className="hotel-name-heading">
       
-     <Link to={`/details/restId=${item.restaurant_id}`}>{item.restaurant_name}</Link></div>
+     <Link to={`/details?restId=${item.restaurant_id}`}>{item.restaurant_name}</Link></div>
     <div className="city-name">{item.address}</div>
     <div className="hotel-name">{item.rating_text}</div>
     <div className="hotel-name">Rs. {item.cost}</div>
